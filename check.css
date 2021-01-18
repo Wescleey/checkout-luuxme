@@ -1,0 +1,299 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 400px;
+    
+}
+
+.wrapper header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wrapper header text{
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    border: none;
+}
+
+input:focus {
+    border: 1px solid blue !important;
+    animation: opacitier 1s ease;
+}
+
+@keyframes opacitier {
+    0% {
+        opacity: 0;
+    }   
+    100% {
+        opacity: 1;
+    }
+}
+
+body{
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    justify-content: space-evenly;
+    padding: 0px 15px;
+    padding-top: 20px;
+    
+}
+
+header img{
+
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 120px;
+    margin-bottom: 10px;
+}
+
+span.sub-legend{
+    font-size: 12px;
+    display: block;
+    margin-bottom: 12px;
+    color: #a3a4a4;
+    letter-spacing: 0;
+    line-height: 21px;
+    margin-left: 28px;
+ 
+}
+
+h3{
+    margin-left: 30px;
+}
+
+.info .info__header img{
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+.info ul.menu{
+    position: relative;
+    width: 100%;
+}
+
+.info ul.menu input{
+    width: 100%;
+    height: 50px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    outline: none;
+    padding: 14px 20px;
+}
+
+.menu__contato{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__contato [name='phoneNumber']{
+    margin-right: 10px;
+}
+
+.entrega input {
+    width: 100%;
+}
+
+.entrega,
+.pagment,
+.info{
+
+    margin-top: 20px;
+
+}
+
+.entrega img{
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+
+.entrega input{
+    height: 50px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    outline: none;
+    padding: 14px 20px;
+
+}
+
+.info__header {
+    margin-left: -25px;
+}
+
+@media screen and (max-width: 990px) {
+    .info__header {
+        margin-left: 0px;
+    }
+}
+
+.info__header img {
+    margin-right: 6px;
+}
+
+.pagment img{
+    width: 20px;
+    height: 20px;
+    float: left;
+
+}
+
+.widget{
+    background: #fff;
+    border-radius: 7px;
+}
+
+.widget .infor{ 
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccd6dd;
+    padding: 15px;
+    
+}
+
+.infor-payments {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.widget .infor .infor__card input{
+    margin-right: 6px;
+
+}
+
+.widget .infor .infor__card img{
+    width: 30px;
+    height: 30px;
+    
+}
+
+.widget .infor__card{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.widget .info__card input , .infor-payments input{
+    height: 50px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    outline: none;
+    padding: 14px 20px;
+    border: 10px;
+    background-color: #f2f7f8;
+    width: 100%;
+}
+
+.infor-payments input {
+    border: 1px solid rgba(0,0, 0, 0.4);
+}
+
+.numbers{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    padding-top: 0px;
+
+}
+
+.numbers [name='securityCode'] {
+    margin-left: 20px;
+}
+
+.numbers input{
+    height: 50px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 10px;
+    border: 1px solid rgba(0,0, 0, 0.4);
+    background-color: #f2f7f8;;
+    width: 100%;
+    padding: 15px;
+  
+}
+
+.boleto {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccd6dd;
+}
+
+.boleto img{
+    margin-right: 7px;
+}
+
+button{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 20px;
+    padding: 13px 0;
+    text-align: center;
+    line-height: normal;
+    border: 0;
+    width: 100%;
+    border-radius: 0;
+    font-weight: 600;
+    text-transform: capitalize;
+    background: #2688ff !important;
+    border-radius: 44px;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    transition: all .9s ease;
+    outline: 0;
+    transform: translateZ(0);
+    will-change: transform;
+    transform-origin: 50% 50%;
+    width: 80%;
+    transform: translateX(10%);
+    cursor: pointer;
+}
+
+.boleto{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.boleto .infor__boleto img{
+    width: 30px;
+    height: 30px;
+}
+
+.security{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.security .infor__security img{
+    width: 30px;
+    height: 30px;
+}

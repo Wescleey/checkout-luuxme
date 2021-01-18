@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxx</title>
+    <link rel="stylesheet" href="check.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
+</head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <img src="imagens/luux.png" alt="imagem luux">
+            </header>
+            <div class="info">
+                <div class="info__header">
+                    <img src="imagens/man-user.png" alt="pessoal" />
+                    <h3>INFORMAÇÕES PESSOAIS</h3>
+                    <span class="sub-legend">Para quem devemos entregar o pedido?</span>
+                </div>
+
+                <ul class="menu" >
+                    <input type="email" name="email" value="" 
+                        placeholder="E-mail*" id="email" required="" autocomplete="off" /><br>
+                    
+                    <input type="name" name="name" value="" 
+                    placeholder="Nome completo*" id="name" required="" autocomplete="off" /><br>
+                    <div class="menu__contato">
+                        <input type="tel" name="phoneNumber" value="" 
+                        placeholder="Celular*" id="phone-number" required="" autocomplete="off" maxlength="15">
+                        
+                        <input type="text" name="ficalNumber" value=""
+                        placeholder="CPF*" id="ficalNumber" required="" autocomplete="off" maxlength="14">
+                    </div>
+                </ul>
+            </div>
+
+            <div class="entrega">
+                <div class="info__header">
+                    <img src="imagens/truck.png" alt="Caminhão de entrega">
+                    <h3>INFORMAÇÕES DE ENTREGA</h3>
+                    <span class="sub-legend">Para onde deveremos entregar o pedido?</span>
+                </div>
+
+                <input type="tel" name="zipcode" placeholder="CEP*" id="zip-code" value=""
+                required="required" autocomplete="off" maxlength="9">
+            </div>
+
+            <div class="pagment">
+                <div class="info__header">
+                    <img src="imagens/credit-card.png" alt="pagamento">
+                    <h3>FORMA DE PAGAMENTO</h3>
+                    <span class="sub-legend">Escolha seu método de pagamento abaixo.</span>
+                </div>
+            </div>
+
+            <div class="widget">
+
+                <div class="infor">
+                    <div class="infor__card">
+                        <input type="radio" id="radio" /><strong>Cartão de crédito</strong>
+                    </div>
+                    <div class="infor__card">
+                        <img src="imagens/mastercard.png" alt="mastercard">
+                        <img src="imagens/visa.png" alt="visa">
+                        <p>Entre outros...</p>
+                    </div>
+                </div>
+                <div class="infor-payments">
+                    <input type="tel" class="form-control cardNumber empty" name="cardNumber" data-checkout="cardNumber" 
+                    placeholder="Número do Cartão" id="cardNumbermp" 
+                    ondrop="return false" autocomplete="off" data-recording-ignore="events" maxlength="19" />
+
+                    <input type="text" class="form-control cardholderName empty" name="cardholderName" data-checkout="cardholderName"
+                    placeholder="Nome impresso no cartão" id="cardholderNamemp" autocomplete="off" data-recording-ignore="events" />
+                </div>
+                <div class="numbers">
+                    <input type="tel" name="cardExpiryDate" 
+                    placeholder="Validade MM/AA" autocomplete="off" data-recording-ignore="events">
+
+                    <input type="tel" class="securityCode" name="securityCode"
+                    placeholder="Cód. de Segurança"
+                    autocomplete="off" 
+                    >
+                </div>
+
+                <div class="boleto">
+                    <div class="infor__boleto">
+                        <input type="radio" id="radio" />
+                        <strong>Boleto</strong>
+                    </div>
+                    <div class="infor__boleto">
+                        <img src="imagens/boleto.png" alt="boleto">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="security">
+                <div class="infor__security">
+                    <img src="imagens/pagamento-seguro.png" alt="pagamento-seguro">
+                </div>
+                <div class="infor__security">
+                    <h3>Pagamento totalmente seguro</h3>
+                    <span class="sub-legend">Todas as compras são feitas de forma segura</span>
+                </div>
+            </div>
+            <button>Finalizar compra</button>
+        </div>
+    </body>
+</html>
+
+
+
